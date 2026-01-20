@@ -2,23 +2,36 @@
 using namespace std;
 
 // Base class
-class Vehicle {
+class Animal {
 public:
-    string brand = "Ford";
-    void honk() {
-        cout << "Tuut, tuut! \n";
+    void animalSound() {
+        cout << "The animal makes a sound \n";
     }
 };
 
 // Derived class
-class Car : public Vehicle {
+class Pig : public Animal {
 public:
-    string model = "Mustang";
+    void animalSound() {
+        cout << "The pig says: wee wee \n";
+    }
+};
+
+// Derived class
+class Dog : public Animal {
+public:
+    void animalSound() {
+        cout << "The dog says: bow wow \n";
+    }
 };
 
 int main() {
-    Car myCar;
-    myCar.honk();
-    cout << myCar.brand + " " + myCar.model;
+    Animal myAnimal;
+    Pig myPig;
+    Dog myDog;
+
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
     return 0;
 }
