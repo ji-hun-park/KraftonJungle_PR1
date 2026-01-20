@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-	// This is a comment
-	cout << "Hello, World!" << endl;
+	int myNum = 15;
+	myNum = 30;
+	cout << myNum << endl;
 	return 0;
 }
