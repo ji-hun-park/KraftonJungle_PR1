@@ -1,24 +1,22 @@
 #include <iostream>
 using namespace std;
 
-class Animal {
-public:
-    virtual void sound() {
-        cout << "Animal sound\n";
-    }
-};
-
-class Dog : public Animal {
-public:
-    void sound() override {
-        cout << "Dog barks\n";
-    }
-};
-
 int main() {
-    Animal* a;
-    Dog d;
-    a = &d;
-    a->sound(); // Outputs: Dog barks
+	string food = "Pizza";
+	string* ptr = &food;
+	string *ptr2 = &food;
+	string * ptr3 = &food;
+	string& ref = food;
+	string &ref2 = food;
+
+	cout << food << endl;
+	cout << &food << endl;
+	cout << ptr << endl;
+	cout << ptr2 << endl;
+	cout << ptr3 << endl;
+	cout << *ptr << endl;
+	cout << ref << endl;
+	cout << ref2 << endl;
+
     return 0;
 }
