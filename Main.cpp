@@ -2,12 +2,10 @@
 using namespace std;
 
 int main() {
-	int myNum = 5;
-	float myFloatNum = 5.99;
-	double myDoubleNum = 9.98;
-	char myLetter = 'D';
-	bool myBoolean = true;
-	string myText = "Hello World";
-	cout << myNum << " " << myFloatNum << " " << myDoubleNum << " " << myLetter << " " << myBoolean << " " << myText << endl;
+	string firstName, lastName;
+	firstName = "John";
+	lastName = "Doe";
+	string fullName = firstName.append(" ").append(lastName);
+	cout << fullName << endl;
 	return 0;
 }
