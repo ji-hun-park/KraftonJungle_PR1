@@ -2,14 +2,15 @@
 using namespace std;
 
 int main() {
-	int countdown = 3;
-
-	while (countdown > 0) {
-		cout << countdown << "\n";
-		countdown--;
+	int i = 0;
+	while (i < 10) {
+		if (i == 4) {
+			i++;
+			continue;
+		}
+		cout << i << "\n";
+		i++;
 	}
-
-	cout << "Happy New Year!!\n";
 
 	return 0;
 }
