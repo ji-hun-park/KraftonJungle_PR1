@@ -2,16 +2,31 @@
 using namespace std;
 
 int main() {
-	int x = 20;
-	int y = 20;
-	if (x > y) {
-		cout << "x is greater than y" << endl;
-	}
-	else if (x == y) {
-		cout << "x is equal to y" << endl;
-	}
-	else {
-		cout << "x is not greater than y" << endl;
-	}
+    int day = 8;
+    switch (day) {
+    case 1:
+        cout << "Monday";
+        break;
+    case 2:
+        cout << "Tuesday";
+        break;
+    case 3:
+        cout << "Wednesday";
+        break;
+    case 4:
+        cout << "Thursday";
+        break;
+    case 5:
+        cout << "Friday";
+        break;
+    case 6:
+        cout << "Saturday";
+        break;
+    case 7:
+        cout << "Sunday";
+        break;
+	default:
+		cout << "Invalid day";
+    }
 	return 0;
 }
